@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hola mundo, quiero salir de Batiz, ayudenme</title>
+        <link rel="stylesheet" href="estilo.css" type="text/css" media="screen">
+        <script src="validar.js"></script>
+    </head>
+    <body>
+        <div class="principal">
+            <form method="get" name="registro" onsubmit="return validar(this)" action="index.html">
+                <label >Nombre:</label>
+                <input class="cajas" type="text" name="nombre" id="nombre"/>
+                <br>
+                <br>
+                <label>Edad</label>
+                <input class="cajas" type="text" name="edad" id="edad"/>
+                <br>
+                <br>
+                <legend>Selecciona sexo:</legend>
+                <blockquote>
+                    <label>Femenino:</label>
+                    <input class="cajas" type="radio" name="sexo" id="Femenino"/>
+                    <label>Masculino:</label>
+                    <input class="cajas" type="radio" name="sexo" id="Masculino"/>
+
+                </blockquote>
+                <label>
+                    <span>Deporte favorito:</span>
+                    <select name="deporte" id="deporte">
+                        <option value="futbol">Futbol</option>
+                        <option value="basquetbol">basquetbol</option>
+                        <option value="beisbol">beisbol</option>
+                        <option value="tenis">tenis</option>
+                        <option value="ninguno">ninguno</option>
+                    </select>
+                </label>
+                <input class="boton" type="submit" name="enviar" id="enviar"/>
+                <input class="boton" type="reset" name="reset" id="reset"/>
+            </form>
+        </div>
+    </body>
+</html>
